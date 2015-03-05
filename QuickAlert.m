@@ -236,7 +236,7 @@
     
     if ([NSThread isMainThread] == NO) {
         dispatch_sync(dispatch_get_main_queue(), ^{
-            [ vpMessageInstance.alertView show ];
+            [vpMessageInstance.alertView show];
         });
     } else {
         [vpMessageInstance.alertView show];
